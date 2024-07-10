@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+
+<body>
+ <div class="calculate">
+	<h1>Calculate average marks</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('form')}}" method="post">
+    	<input type="text" name="maths" placeholder="Maths" required="required" />
+        <input type="text" name="science" placeholder="Science" required="required" />
+		<input type="text" name="history" placeholder="history" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+    </form>
+
+   <br>
+   The average marks is {{score}}
+   <br>
+   <!-- This score can be read due to an amazing web template Jinja 2 technique. This is useful to build dynamic website. Agar hume koi value daalni hain backend se toh hum daal sakhte hain directly . Integrate karta hain ek tareeke se  -->
+ </div>
+
+
+</body>
+</html>
